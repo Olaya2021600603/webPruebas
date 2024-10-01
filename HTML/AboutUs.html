@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="icon" type="image/jpg" href="../IMAGES/Logo.jpg">
+    <link rel="stylesheet" href="../CSS/AboutUsStyles.css">
+    <link rel="stylesheet" href="../CSS/headerFooterStyles.css">
+    <script src="../JS/aboutUsScript.js"></script>
+    <script src="../JS/hederFooterScript.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav id="GlobalNav">
+            <ul>
+                <li><a href="index.html" class="link-logo"></a></li>
+                <li><a href="Women.html">Dama</a>
+                    <ul class="dropdown">
+                        <li><a>Blusas</a></li>
+                        <li><a>Vestidos</a></li>
+                        <li><a>Faldas</a></li>
+                        <li><a>Pantalones</a></li>
+                    </ul>
+                </li>
+                <li><a href="hombre.html">Caballero</a>
+                    <ul class="dropdown">
+                        <li><a>Playeras</a></li>
+                        <li><a>Camisas</a></li>
+                        <li><a>Pants</a></li>
+                        <li><a>pantalones</a></li>
+                    </ul>
+                </li>
+                <li><a href="niños.html">Niños</a>
+                    <ul class="dropdown">
+                        <li><a>Playeras</a></li>
+                        <li><a>Camisas</a></li>
+                        <li><a>Pants</a></li>
+                        <li><a>pantalones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#footer">Sobre Nosotros</a>
+                </li>
+                <li><a id="openModal" href="#"></a>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <br>
+    <main>
+        <h1>Acerca de nosotros</h1>
+        <p>
+            Somos una empresa 100% Mexicana fundada en 2015 con el propósito de ofrecer moda accesible para todos.
+        </p>
+        <h2>Nuestros inicios</h2>
+        <div class="image-container">
+            <img src="../IMAGES/TiendaOld.jpg" alt="Imagen de nuestra primera tienda">
+        </div>
+        <p>Nuestra historia comienza en la CDMX en un pequeño local que comenzó con una única sede y un inventario
+            modesto. Fue hasta 2 años después, con mucho esfuerzo, que abrimos un segundo local, aún en la CDMX.</p>
+        <p>Después de 5 años desde la apertura de nuestro primer local, nos expandimos con 10 tiendas en algunas de las
+            principales ciudades de México.</p>
+        <p>En la actualidad, contamos con 15 tiendas repartidas a lo largo de México y en un futuro planeamos
+            expandirnos fuera del país.</p>
+        <h3>Misión</h3>
+        <p>Nuestra misión es ofrecer a nuestros clientes prendas de vestir de alta calidad, con diseños modernos y a
+            precios accesibles. Nos esforzamos por proporcionar una experiencia de compra única y satisfactoria, donde
+            la comodidad, la calidad y el estilo se unen para reflejar la personalidad y la individualidad de cada
+            persona que elige nuestras prendas.</p>
+        <h3>Visión</h3>
+        <p>Nos visualizamos como una marca reconocida por nuestra excelencia en diseño y fabricación de ropa, así como
+            por nuestra dedicación a la satisfacción del cliente. Buscamos expandir nuestra presencia tanto en el ámbito
+            nacional como internacional, manteniendo siempre nuestros altos estándares de calidad y ética empresarial.
+            Nos esforzamos por ser líderes en la industria de la moda, inspirando confianza y fomentando la
+            autoexpresión a través de nuestras colecciones de ropa.</p>
+    </main>
+    <br>
+    <br>
+    <footer id="footer">
+        <section class="social-networks">
+            <h3>Redes sociales</h3>
+            <ul>
+                <li><a href="https://www.instagram.com/omar.crz/" class="instagram-logo"></a></li>
+                <li><a href="https://www.facebook.com/Omar.Cruz.Ag" class="facebook-logo"></a></li>
+                <li><a href="https://www.youtube.com" class="youtube-logo"></a></li>
+            </ul>
+        </section>
+        <section class="information">
+            <h3>Informacion</h3>
+            <ul>
+                <li><a href="questions.html">Preguntas frecuentes</a></li>
+                <li><a href="AboutUs.html">Nuestra empresa</a></li>
+                <li><a href="siteMap.html">Mapa del sitio</a></li>
+            </ul>
+        </section>
+        <section class="form">
+            <h3>Suscribete a nuestro Newsletter</h3>
+            <form method="post" action="../PHP/form.php">
+                <fieldset>
+                    <legend>Informacion personal</legend>
+                    <div>
+                        <label>
+                            Nombre: <input type="text" name="name" placeholder="Juan Perez" required>
+                        </label>
+                        <br>
+                        <label>
+                            Email: <input type="email" name="email" placeholder=".........@gmail.com" required>
+                        </label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Informacion adicional</legend>
+                    <label>
+                        Telefono (Opcional): <input type="tel" name="tel" placeholder="5512345840">
+                    </label>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </footer>
+    <footer class="copyrigth">
+        Copyrigth © 2024 - Venta de ropa xd
+    </footer>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="contenedor__todo">
+                <div class="caja__trasera">
+                    <div class="caja__trasera-login">
+                        <h3>¿Ya tienes una cuenta?</h3>
+                        <p>Inicia sesión para entrar en la página</p>
+                        <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    </div>
+                    <div class="caja__trasera-register">
+                        <h3>¿Aún no tienes una cuenta?</h3>
+                        <p>Regístrate para que puedas iniciar sesión</p>
+                        <button id="btn__registrarse">Regístrarse</button>
+                    </div>
+                </div>
+                <div class="contenedor__login-register">
+                    <form action="../PHP/login.php" method="post" class="formulario__login">
+                        <h2>Iniciar Sesión</h2>
+                        <input type="text" placeholder="Correo Electronico" name="correo">
+                        <input type="password" placeholder="Contraseña" name="contrasena">
+                        <button>Entrar</button>
+                    </form>
+                    <form action="../PHP/register.php" method="POST" class="formulario__register">
+                        <h2>Regístrarse</h2>
+                        <input type="text" placeholder="Nombre completo" name="nombre_completo" required>
+                        <input type="email" placeholder="Correo Electronico" name="correo" required>
+                        <input type="text" placeholder="Usuario" name="usuario" required>
+                        <input type="password" placeholder="Contraseña" name="contrasena" required>
+                        <button>Regístrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="userModal" class="modal">
+        <div class="modal-conten">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                Información del Usuario
+            </div>
+            <div class="modal-body">
+                <p>Usuario: <span id="userName">Nombre del Usuario</span></p>
+                <p>Correo: <span id="userEmail">correo@ejemplo.com</span></p>
+            </div>
+            <div class="modal-footer">
+                <button class="cart-btn" onclick="goToCart()">Ir al Carrito</button>
+                <button class="logout-btn" onclick="logout()">Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
